@@ -7,7 +7,7 @@ var connection = mysql.createConnection({
     port:3306,
     user: "root",
     password:"Carl_051",
-    database: "burger_db"
+    database: "burgers_db"
 });
 
 //Making connection ...
@@ -21,5 +21,10 @@ connection.connect(function(err){
 });
 
 //Important to export always (if you neeed to use it in other file);
+
+//This line just to test that this is working
+connection.query("SELECT * FROM burgers", function(err, res){
+    console.table(res);
+});
 
 module.exports = connection;
