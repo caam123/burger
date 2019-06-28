@@ -1,7 +1,56 @@
 body{
-    color:red;
+    color:rgb(20,20,20);
+    background-color:lightyellow;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
 }
 
 h1{
-    color:blue;
+    color: brown;
+    padding:1em  0;
+}
+
+h1, h2, h3{
+    font-family:'Pacifico', cursive;
+    padding-bottom: 1em;
+    
+}
+
+h2{
+    color:tan;
+}
+
+.row-main{
+    min-height: 90vh;
+}
+
+button{
+    background-color:lightblue;
+    color:darkcyan;
+    border-radius: 10px;
+    border:none;
+    padding:5px 10px;
+    margin:10px;
+}
+
+
+ul{
+    padding:0;
+    margin:0;
+}
+li{
+    list-style-type: none;
+    margin:0;
+}
+input[type="text"]{
+    background-color:transparent;
+    border:none;
+    box-shadow: none;
+    border-bottom: 1px solid tan;
+}
+
+input[type="text"]:focus{
+    background-color:rgba(255, 242, 121, 0.5);
+    border-bottom: 4px solid tan;
+
 }
